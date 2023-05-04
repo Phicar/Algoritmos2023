@@ -23,7 +23,7 @@ def floyd(A):
 				pos = dist[i][k]+dist[k][j]
 				if pos<dist[i][j]:
 					dist[i][j]=pos
-					ant[i][j]=k
+					ant[i][j]=ant[k][j]
 	#aca ya tengo en dist las distancias mas cortas.
 floyd([[0,0,0,3],[0,0,0,2],[2,4,0,7],[0,0,0,0]])
 print(dist)
